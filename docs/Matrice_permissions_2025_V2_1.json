@@ -1,0 +1,556 @@
+{
+  "workbook": "Matrice_permissions_2025_V2_1 (1).xlsx",
+  "sheets": {
+    "Assignation des droits": {
+      "roles": [
+        "Administrateur",
+        "Pilote",
+        "Etudiant",
+        "Anonyme"
+      ],
+      "items": [
+        {
+          "category": "Gestion d'accès",
+          "feature_code": "SFx1",
+          "feature_name": "Authentification et gestion des accès",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": true,
+            "Anonyme": true
+          }
+        },
+        {
+          "category": "Gestion des entreprises",
+          "feature_code": "SFx2",
+          "feature_name": "Rechercher et afficher une entreprise",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": true,
+            "Anonyme": true
+          }
+        },
+        {
+          "category": "Gestion des entreprises",
+          "feature_code": "SFx3",
+          "feature_name": "Créer une entreprise",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des entreprises",
+          "feature_code": "SFx4",
+          "feature_name": "Modifier une entreprise",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des entreprises",
+          "feature_code": "SFx5",
+          "feature_name": "Evaluer une entreprise",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des entreprises",
+          "feature_code": "SFx6",
+          "feature_name": "Supprimer une entreprise",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des offres de stages",
+          "feature_code": "SFx7",
+          "feature_name": "Rechercher et afficher une offre",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": true,
+            "Anonyme": true
+          }
+        },
+        {
+          "category": "Gestion des offres de stages",
+          "feature_code": "SFx8",
+          "feature_name": "Créer une offre",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des offres de stages",
+          "feature_code": "SFx9",
+          "feature_name": "Modifier une offre",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des offres de stages",
+          "feature_code": "SFx10",
+          "feature_name": "Supprimer une offre",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des offres de stages",
+          "feature_code": "SFx11",
+          "feature_name": "Consulter les statistiques des offres",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": true,
+            "Anonyme": true
+          }
+        },
+        {
+          "category": "Gestion des pilotes",
+          "feature_code": "SFx12",
+          "feature_name": "Rechercher et afficher un compte Pilote",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": false,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des pilotes",
+          "feature_code": "SFx13",
+          "feature_name": "Créer un compte Pilote",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": false,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des pilotes",
+          "feature_code": "SFx14",
+          "feature_name": "Modifier un compte Pilote",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": false,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des pilotes",
+          "feature_code": "SFx15",
+          "feature_name": "Supprimer un compte Pilote",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": false,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des étudiants",
+          "feature_code": "SFx16",
+          "feature_name": "Rechercher et afficher un compte Etudiant",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des étudiants",
+          "feature_code": "SFx17",
+          "feature_name": "Créer un compte Etudiant",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des étudiants",
+          "feature_code": "SFx18",
+          "feature_name": "Modifier un compte Etudiant",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des étudiants",
+          "feature_code": "SFx19",
+          "feature_name": "Supprimer un compte Etudiant",
+          "permissions": {
+            "Administrateur": true,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des candidatures",
+          "feature_code": "SFx20",
+          "feature_name": "Postuler à une offre",
+          "permissions": {
+            "Administrateur": false,
+            "Pilote": false,
+            "Etudiant": true,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des candidatures",
+          "feature_code": "SFx21",
+          "feature_name": "Afficher la liste des offres pour lesquelles l'étudiant a postulé.",
+          "permissions": {
+            "Administrateur": false,
+            "Pilote": false,
+            "Etudiant": true,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des candidatures",
+          "feature_code": "SFx22",
+          "feature_name": "Afficher la liste des offres auxquelles les élèves du pilote ont postulé",
+          "permissions": {
+            "Administrateur": false,
+            "Pilote": true,
+            "Etudiant": false,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des wish-list",
+          "feature_code": "SFx23",
+          "feature_name": "Afficher les offres ajoutées à la wish-list",
+          "permissions": {
+            "Administrateur": false,
+            "Pilote": false,
+            "Etudiant": true,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des wish-list",
+          "feature_code": "SFx24",
+          "feature_name": "Ajouter une offre à la wish-list",
+          "permissions": {
+            "Administrateur": false,
+            "Pilote": false,
+            "Etudiant": true,
+            "Anonyme": false
+          }
+        },
+        {
+          "category": "Gestion des wish-list",
+          "feature_code": "SFx25",
+          "feature_name": "Retirer une offre à la wish-list",
+          "permissions": {
+            "Administrateur": false,
+            "Pilote": false,
+            "Etudiant": true,
+            "Anonyme": false
+          }
+        }
+      ],
+      "categories": {
+        "Gestion d'accès": [
+          {
+            "feature_code": "SFx1",
+            "feature_name": "Authentification et gestion des accès",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": true,
+              "Anonyme": true
+            }
+          }
+        ],
+        "Gestion des entreprises": [
+          {
+            "feature_code": "SFx2",
+            "feature_name": "Rechercher et afficher une entreprise",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": true,
+              "Anonyme": true
+            }
+          },
+          {
+            "feature_code": "SFx3",
+            "feature_name": "Créer une entreprise",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx4",
+            "feature_name": "Modifier une entreprise",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx5",
+            "feature_name": "Evaluer une entreprise",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx6",
+            "feature_name": "Supprimer une entreprise",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          }
+        ],
+        "Gestion des offres de stages": [
+          {
+            "feature_code": "SFx7",
+            "feature_name": "Rechercher et afficher une offre",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": true,
+              "Anonyme": true
+            }
+          },
+          {
+            "feature_code": "SFx8",
+            "feature_name": "Créer une offre",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx9",
+            "feature_name": "Modifier une offre",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx10",
+            "feature_name": "Supprimer une offre",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx11",
+            "feature_name": "Consulter les statistiques des offres",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": true,
+              "Anonyme": true
+            }
+          }
+        ],
+        "Gestion des pilotes": [
+          {
+            "feature_code": "SFx12",
+            "feature_name": "Rechercher et afficher un compte Pilote",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": false,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx13",
+            "feature_name": "Créer un compte Pilote",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": false,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx14",
+            "feature_name": "Modifier un compte Pilote",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": false,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx15",
+            "feature_name": "Supprimer un compte Pilote",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": false,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          }
+        ],
+        "Gestion des étudiants": [
+          {
+            "feature_code": "SFx16",
+            "feature_name": "Rechercher et afficher un compte Etudiant",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx17",
+            "feature_name": "Créer un compte Etudiant",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx18",
+            "feature_name": "Modifier un compte Etudiant",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx19",
+            "feature_name": "Supprimer un compte Etudiant",
+            "permissions": {
+              "Administrateur": true,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          }
+        ],
+        "Gestion des candidatures": [
+          {
+            "feature_code": "SFx20",
+            "feature_name": "Postuler à une offre",
+            "permissions": {
+              "Administrateur": false,
+              "Pilote": false,
+              "Etudiant": true,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx21",
+            "feature_name": "Afficher la liste des offres pour lesquelles l'étudiant a postulé.",
+            "permissions": {
+              "Administrateur": false,
+              "Pilote": false,
+              "Etudiant": true,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx22",
+            "feature_name": "Afficher la liste des offres auxquelles les élèves du pilote ont postulé",
+            "permissions": {
+              "Administrateur": false,
+              "Pilote": true,
+              "Etudiant": false,
+              "Anonyme": false
+            }
+          }
+        ],
+        "Gestion des wish-list": [
+          {
+            "feature_code": "SFx23",
+            "feature_name": "Afficher les offres ajoutées à la wish-list",
+            "permissions": {
+              "Administrateur": false,
+              "Pilote": false,
+              "Etudiant": true,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx24",
+            "feature_name": "Ajouter une offre à la wish-list",
+            "permissions": {
+              "Administrateur": false,
+              "Pilote": false,
+              "Etudiant": true,
+              "Anonyme": false
+            }
+          },
+          {
+            "feature_code": "SFx25",
+            "feature_name": "Retirer une offre à la wish-list",
+            "permissions": {
+              "Administrateur": false,
+              "Pilote": false,
+              "Etudiant": true,
+              "Anonyme": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}
