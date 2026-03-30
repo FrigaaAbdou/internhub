@@ -87,6 +87,8 @@ Contient les controleurs applicatifs. Chaque controleur orchestre une action, pr
 
 Reserve pour les entites metier, repositories, services d'acces aux donnees et logique metier reutilisable.
 
+Les acces a la base doivent s'appuyer sur `PHP PDO` avec requetes preparees, centralises dans une couche de connexion commune plutot que du SQL disperse dans les controleurs.
+
 ### `app/Views`
 
 Contient les vues HTML rendues cote serveur :
@@ -121,6 +123,7 @@ Contient les tests unitaires a prevoir pour PHPUnit.
 - Les vues ne contiennent pas de logique metier.
 - Les validations ne doivent pas vivre dans les vues.
 - Les acces base de donnees ne doivent pas etre codes directement dans les controleurs.
+- Les acces SQL doivent passer par `PHP PDO` et des requetes preparees.
 
 ## 6. Repartition de travail possible
 

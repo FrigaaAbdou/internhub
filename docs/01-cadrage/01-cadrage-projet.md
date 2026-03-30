@@ -57,7 +57,7 @@ Le livrable final comprend :
 - Backend en PHP, avec POO obligatoire.
 - Frontend en HTML5, CSS3, JavaScript.
 - Serveur Apache.
-- Base de donnees SQL.
+- Base de donnees SQL avec acces via `PHP PDO`.
 - Aucun framework type React, Vue, Angular, Laravel ou Symfony.
 - Utilisation obligatoire d'un moteur de template cote backend.
 - Responsive design obligatoire.

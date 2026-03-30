@@ -41,7 +41,7 @@ Question :
 L'intention fonctionnelle est-elle vraiment d'exclure les etudiants de l'evaluation alors qu'ils vivent l'experience du stage ?
 
 Hypothese de travail :
-Conserver la matrice telle quelle tant qu'aucune decision contraire n'est validee.
+Conserver et implementer la matrice telle quelle. Sans nouvelle version officielle de la matrice, les droits d'acces ne doivent pas etre modifies.
 
 ### 2.2 Les statistiques doivent-elles etre publiques ?
 
@@ -52,7 +52,7 @@ Question :
 Le client souhaite-t-il vraiment exposer les statistiques sans authentification ?
 
 Hypothese de travail :
-Autoriser seulement des statistiques non sensibles sur la partie publique.
+Implementer l'acces public a `SFx11`, puisque la matrice l'autorise explicitement. Si un changement est demande plus tard, il devra passer par une mise a jour officielle de la matrice ou une decision projet tracee.
 
 ### 2.3 Visibilite des coordonnees d'entreprise
 

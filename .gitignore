@@ -1,1 +1,14 @@
 .DS_Store
+docker/.env
+.env
+vendor/
+tools/composer.phar
+.phpunit.cache/
+storage/cache/*
+!storage/cache/.gitignore
+storage/logs/*
+!storage/logs/.gitignore
+storage/sessions/*
+!storage/sessions/.gitignore
+storage/uploads/*
+!storage/uploads/.gitignore

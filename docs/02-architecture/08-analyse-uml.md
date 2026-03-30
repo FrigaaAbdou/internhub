@@ -1,6 +1,6 @@
 # Analyse du dossier UML
 
-Ce document synthétise l'architecture déduite des fichiers présents dans `docs/UML`.
+Ce document synthétise l'architecture déduite des fichiers présents dans `docs/05-sources/uml`.
 
 ## 1. Fichiers analysés
 

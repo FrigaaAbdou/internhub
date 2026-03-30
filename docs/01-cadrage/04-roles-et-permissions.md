@@ -1,6 +1,6 @@
 # Roles et permissions
 
-Source : `docs/Matrice_permissions_2025_V2_1.json`
+Source de verite pour les droits d'acces : `docs/05-sources/permissions/Matrice_permissions_2025_V2_1.json`
 
 ## 1. Roles identifies
 
@@ -98,7 +98,7 @@ Pas d'acces aux fonctionnalites necessitant un compte.
 
 ## 4. Points d'attention
 
-- `SFx5 - Evaluer une entreprise` est autorisee pour `Administrateur` et `Pilote`, mais pas pour `Etudiant`. Cette regle merite validation fonctionnelle.
-- Les statistiques `SFx11` sont accessibles aux anonymes selon la matrice. Cette ouverture doit etre confirmee.
+- `SFx5 - Evaluer une entreprise` est autorisee a `Administrateur` et `Pilote`, et interdite a `Etudiant` et `Anonyme`. Cette regle doit etre implementee telle quelle tant qu'aucune nouvelle matrice n'est fournie.
+- Les statistiques `SFx11` sont accessibles a `Administrateur`, `Pilote`, `Etudiant` et `Anonyme`. Cette ouverture fait partie des droits officiels a respecter.
 - Les fonctionnalites transversales `SFx27` et `SFx28` ne sont pas couvertes par la matrice.
-- Les permissions definissent les acces fonctionnels, mais pas encore les regles fines de visibilite des donnees.
+- Les permissions definissent les acces fonctionnels. Les regles fines de visibilite des donnees doivent rester compatibles avec cette matrice et ne pas la contredire.
