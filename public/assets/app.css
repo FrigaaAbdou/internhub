@@ -3805,6 +3805,271 @@ h1 {
     gap: 0.85rem;
 }
 
+.statistics-page {
+    margin-top: 1.5rem;
+}
+
+.statistics-page__hero,
+.statistics-page__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.statistics-page__copy,
+.statistics-page__hero-card,
+.statistics-metric-card,
+.statistics-card {
+    padding: 1.5rem;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow);
+}
+
+.statistics-page__copy {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92)),
+        radial-gradient(circle at top right, rgba(181, 158, 250, 0.12), transparent 34%);
+}
+
+.statistics-page__copy h1 {
+    margin-bottom: 0.85rem;
+    font-size: clamp(2.4rem, 7vw, 4.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+.statistics-page__hero-card {
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+}
+
+.statistics-page__content {
+    margin-top: 1.5rem;
+}
+
+.statistics-page__main,
+.statistics-page__aside {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.statistics-metrics,
+.statistics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.statistics-metric-card {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.statistics-metric-card strong {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: var(--ink);
+}
+
+.statistics-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.statistics-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.statistics-card--soft {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92)),
+        radial-gradient(circle at bottom left, rgba(181, 158, 250, 0.12), transparent 38%);
+}
+
+.statistics-card__stack {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.statistics-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.statistics-list {
+    display: grid;
+    gap: 0.85rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.statistics-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    border-radius: 18px;
+    background: rgba(248, 250, 252, 0.9);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.statistics-list li strong {
+    color: var(--ink);
+}
+
+.legal-page {
+    margin-top: 1.5rem;
+}
+
+.legal-page__hero,
+.legal-page__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.legal-page__copy,
+.legal-page__hero-card,
+.legal-card {
+    padding: 1.5rem;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow);
+}
+
+.legal-page__copy {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92)),
+        radial-gradient(circle at top right, rgba(181, 158, 250, 0.12), transparent 34%);
+}
+
+.legal-page__copy h1 {
+    margin-bottom: 0.85rem;
+    font-size: clamp(2.4rem, 7vw, 4.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+.legal-page__hero-card {
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+}
+
+.legal-page__content {
+    margin-top: 1.5rem;
+}
+
+.legal-page__main,
+.legal-page__aside {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.legal-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.legal-card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.legal-card p {
+    margin: 0;
+    color: var(--ink-soft);
+    line-height: 1.8;
+}
+
+.legal-card--soft {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92)),
+        radial-gradient(circle at bottom left, rgba(181, 158, 250, 0.12), transparent 38%);
+}
+
+.legal-card__stack {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.support-error-page {
+    margin-top: 1.5rem;
+}
+
+.support-error-page__hero,
+.support-error-page__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.support-error-page__copy,
+.support-error-page__hero-card,
+.support-error-card {
+    padding: 1.5rem;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow);
+}
+
+.support-error-page__copy {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92)),
+        radial-gradient(circle at top right, rgba(181, 158, 250, 0.12), transparent 34%);
+}
+
+.support-error-page__copy h1 {
+    margin-bottom: 0.85rem;
+    font-size: clamp(2.4rem, 7vw, 4.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+.support-error-page__hero-card {
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+}
+
+.support-error-page__content {
+    margin-top: 1.5rem;
+}
+
+.support-error-page__main,
+.support-error-page__aside {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.support-error-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.support-error-card--soft {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92)),
+        radial-gradient(circle at bottom left, rgba(181, 158, 250, 0.12), transparent 38%);
+}
+
+.support-error-card__stack {
+    display: grid;
+    gap: 0.85rem;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -4542,6 +4807,11 @@ pre {
         flex-direction: row;
         align-items: center;
     }
+
+    .statistics-metrics,
+    .statistics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (min-width: 841px) {
@@ -4713,6 +4983,33 @@ pre {
     }
 
     .company-form__content {
+        grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.52fr);
+        gap: 1.5rem;
+    }
+
+    .statistics-page__hero {
+        grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+    }
+
+    .statistics-page__content {
+        grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.52fr);
+        gap: 1.5rem;
+    }
+
+    .legal-page__hero {
+        grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+    }
+
+    .legal-page__content {
+        grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.52fr);
+        gap: 1.5rem;
+    }
+
+    .support-error-page__hero {
+        grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+    }
+
+    .support-error-page__content {
         grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.52fr);
         gap: 1.5rem;
     }

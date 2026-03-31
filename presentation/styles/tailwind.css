@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@source "../index.html";
+
+@theme {
+    --color-deck-accent: #450bf4;
+    --color-deck-accent-dark: #2a0792;
+    --color-deck-accent-soft: #ece7fe;
+    --color-deck-ink: #0f172a;
+    --color-deck-ink-soft: #64748b;
+    --color-deck-line: #e5e7eb;
+    --color-deck-surface: #ffffff;
+    --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@import "./custom.css";

@@ -12,3 +12,4 @@ storage/sessions/*
 !storage/sessions/.gitignore
 storage/uploads/*
 !storage/uploads/.gitignore
+presentation/node_modules/
