@@ -15,6 +15,9 @@ $isAuthScreen = $currentPath === '/login';
     <link rel="icon" type="image/png" href="<?= e(asset('/assets/mini-logo.png')) ?>">
     <link rel="apple-touch-icon" href="<?= e(asset('/assets/mini-logo.png')) ?>">
     <link rel="stylesheet" href="<?= e(asset('/assets/app.css')) ?>">
+    <?php if (! $isAuthScreen): ?>
+        <script src="<?= e(asset('/assets/app.js')) ?>" defer></script>
+    <?php endif; ?>
 </head>
 <body class="<?= $isAuthScreen ? 'is-auth-screen' : '' ?>">
 <a class="skip-link" href="#main-content">Aller au contenu principal</a>

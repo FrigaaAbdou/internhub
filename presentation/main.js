@@ -23,6 +23,7 @@ import {
     Palette,
     Play,
     RefreshCw,
+    RotateCcw,
     Route,
     Search,
     Send,
@@ -33,9 +34,9 @@ import {
     TriangleAlert,
     User,
     Users,
-    Workflow,
-    createIcons
+    Workflow
 } from "lucide";
+import createElement from "lucide/dist/esm/createElement.js";
 import Reveal from "reveal.js";
 import Notes from "reveal.js/plugin/notes";
 
@@ -53,44 +54,75 @@ const deck = new Reveal({
     maxScale: 1.25
 });
 
+const deckIcons = {
+    Activity,
+    BadgeCheck,
+    Blocks,
+    Briefcase,
+    CheckCheck,
+    Compass,
+    Database,
+    Eye,
+    FileSearch,
+    Files,
+    Globe,
+    Key,
+    LayoutGrid,
+    Lock,
+    LogIn,
+    Monitor,
+    Palette,
+    Play,
+    RefreshCw,
+    RotateCcw,
+    Route,
+    Search,
+    Send,
+    Settings,
+    Shield,
+    ShieldCheck,
+    Sparkles,
+    TriangleAlert,
+    User,
+    Users,
+    Workflow
+};
+
+function toPascalCase(value) {
+    return value
+        .split("-")
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join("");
+}
+
+function renderDeckIcons() {
+    document.querySelectorAll("[data-lucide]").forEach((placeholder) => {
+        const iconName = placeholder.getAttribute("data-lucide");
+
+        if (!iconName) {
+            return;
+        }
+
+        const iconNode = deckIcons[toPascalCase(iconName)];
+
+        if (!iconNode) {
+            console.warn(`Missing deck icon: ${iconName}`);
+            return;
+        }
+
+        const svg = createElement(iconNode, {
+            class: "deck-lucide",
+            "stroke-width": 2.1,
+            "aria-hidden": "true",
+            "data-lucide": iconName
+        });
+
+        placeholder.replaceWith(svg);
+    });
+}
+
 deck.initialize({
     plugins: [Notes]
-});
-
-createIcons({
-    icons: {
-        activity: Activity,
-        "badge-check": BadgeCheck,
-        blocks: Blocks,
-        briefcase: Briefcase,
-        "check-check": CheckCheck,
-        compass: Compass,
-        database: Database,
-        eye: Eye,
-        "file-search": FileSearch,
-        files: Files,
-        globe: Globe,
-        key: Key,
-        "layout-grid": LayoutGrid,
-        lock: Lock,
-        "log-in": LogIn,
-        monitor: Monitor,
-        palette: Palette,
-        play: Play,
-        "refresh-cw": RefreshCw,
-        route: Route,
-        search: Search,
-        send: Send,
-        settings: Settings,
-        shield: Shield,
-        "shield-check": ShieldCheck,
-        sparkles: Sparkles,
-        "triangle-alert": TriangleAlert,
-        user: User,
-        users: Users,
-        workflow: Workflow
-    },
-    attrs: {
-        class: "deck-lucide"
-    }
+}).then(() => {
+    renderDeckIcons();
 });

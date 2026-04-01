@@ -77,8 +77,8 @@
 .reveal p,
 .reveal li {
     color: var(--deck-ink-soft);
-    font-size: 0.96rem;
-    line-height: 1.48;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .eyebrow {
@@ -100,7 +100,7 @@
 
 .lead {
     max-width: 760px;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
 }
 
 .deck-brand {
@@ -139,52 +139,50 @@
     max-width: 760px;
 }
 
-.cover-aside {
+.cover-preview {
     display: grid;
     gap: 0.75rem;
 }
 
-.cover-aside__card {
-    padding: 0.95rem 1rem;
+.cover-preview img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border: 1px solid rgba(69, 11, 244, 0.12);
-    border-radius: 22px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(236, 231, 254, 0.6));
-    box-shadow: 0 16px 34px rgba(69, 11, 244, 0.07);
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(69, 11, 244, 0.08), rgba(181, 158, 250, 0.24));
+    box-shadow: 0 24px 44px rgba(69, 11, 244, 0.08);
 }
 
-.cover-aside__head {
-    display: flex;
-    align-items: center;
-    gap: 0.45rem;
-    margin-bottom: 0.3rem;
+.cover-preview__metrics {
+    display: grid;
+    gap: 0.6rem;
 }
 
-.cover-aside__label {
-    display: inline-flex;
-    align-items: center;
-    min-height: 28px;
-    padding: 0.18rem 0.58rem;
-    margin-bottom: 0.55rem;
-    border-radius: 999px;
-    background: rgba(69, 11, 244, 0.12);
+.cover-preview__metric {
+    padding: 0.8rem 0.9rem;
+    border: 1px solid rgba(69, 11, 244, 0.12);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(236, 231, 254, 0.5));
+    box-shadow: 0 16px 32px rgba(69, 11, 244, 0.06);
+}
+
+.cover-preview__metric span {
+    display: block;
+    margin-bottom: 0.18rem;
     color: var(--deck-accent-dark);
-    font-size: 0.62rem;
+    font-size: 0.68rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
-.cover-aside__card strong {
+.cover-preview__metric strong {
     display: block;
-    margin-bottom: 0.28rem;
     color: var(--deck-ink);
-    font-size: 1rem;
-    line-height: 1.2;
-}
-
-.cover-aside__card p {
-    margin: 0;
-    font-size: 0.84rem;
+    font-size: 0.95rem;
+    line-height: 1.25;
 }
 
 .meta-row {
@@ -241,8 +239,26 @@
 
 .deck-card p {
     margin: 0;
-    font-size: 0.88rem;
+    font-size: 0.91rem;
     line-height: 1.44;
+}
+
+.mini-list {
+    display: grid;
+    gap: 0.42rem;
+    margin-top: 0.2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.mini-list li {
+    margin: 0;
+    font-size: 0.89rem;
+    line-height: 1.42;
+}
+
+.mini-list strong {
+    color: var(--deck-ink);
 }
 
 .icon-badge {
@@ -375,7 +391,7 @@
 
 .architecture-layer p {
     margin: 0;
-    font-size: 0.84rem;
+    font-size: 0.88rem;
 }
 
 .security-grid {
@@ -397,21 +413,43 @@
     text-transform: uppercase;
 }
 
-.ui-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.ui-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+    margin-top: 0.8rem;
 }
 
-.ui-grid .deck-card {
-    padding: 0.9rem;
+.ui-shot-card {
+    overflow: hidden;
+    border: 1px solid rgba(69, 11, 244, 0.1);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 248, 255, 0.94));
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.06);
 }
 
-.ui-grid .deck-card h3 {
-    font-size: 0.92rem;
+.ui-shot-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 5;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    background: linear-gradient(135deg, rgba(69, 11, 244, 0.08), rgba(181, 158, 250, 0.22));
 }
 
-.ui-grid .deck-card p {
-    font-size: 0.8rem;
-    line-height: 1.38;
+.ui-shot-card__body {
+    padding: 0.48rem 0.68rem 0.58rem;
+}
+
+.ui-shot-card__body h3 {
+    margin-bottom: 0.2rem;
+    font-size: 0.82rem;
+}
+
+.ui-shot-card__body p {
+    margin: 0;
+    font-size: 0.71rem;
+    line-height: 1.24;
 }
 
 .family-chip {
@@ -431,6 +469,37 @@
 
 .verification-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.proof-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.proof-metric {
+    padding: 0.85rem 0.9rem;
+    border: 1px solid rgba(69, 11, 244, 0.12);
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(236, 231, 254, 0.5));
+    box-shadow: 0 16px 34px rgba(69, 11, 244, 0.06);
+}
+
+.proof-metric strong {
+    display: block;
+    color: var(--deck-ink);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.proof-metric span {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--deck-ink-soft);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.35;
 }
 
 .verification-chip {
@@ -490,6 +559,26 @@
     font-size: 0.86rem;
 }
 
+.route-chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+    margin-top: 0.65rem;
+}
+
+.route-chip-group span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 0.18rem 0.56rem;
+    border-radius: 999px;
+    background: rgba(69, 11, 244, 0.08);
+    color: var(--deck-accent-dark);
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
 .deck-card strong {
     color: var(--deck-ink);
 }
@@ -499,8 +588,22 @@
     max-width: 760px;
     color: var(--deck-ink);
     font-weight: 700;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     line-height: 1.4;
+}
+
+.closing-banner {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0.55rem 0.95rem;
+    margin-top: 1rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(69, 11, 244, 0.1), rgba(181, 158, 250, 0.2));
+    color: var(--deck-accent-dark);
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
 }
 
 .reveal ol,
@@ -531,7 +634,9 @@
 
     .card-grid,
     .architecture-stack,
-    .demo-flow {
+    .demo-flow,
+    .ui-showcase,
+    .proof-strip {
         grid-template-columns: 1fr;
     }
 

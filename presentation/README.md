@@ -22,6 +22,7 @@ It is intentionally separated from the PHP application so the deck can evolve wi
 - [styles/custom.css](/Users/abdoufrigaa/Projects/internhub/presentation/styles/custom.css)
 - [PLAN.md](/Users/abdoufrigaa/Projects/internhub/presentation/PLAN.md)
 - [SLIDE-PLAN.md](/Users/abdoufrigaa/Projects/internhub/presentation/SLIDE-PLAN.md)
+- [SOUTENANCE-5MIN-PLAN.md](/Users/abdoufrigaa/Projects/internhub/presentation/SOUTENANCE-5MIN-PLAN.md)
 
 ## Setup
 
@@ -44,9 +45,10 @@ Then open:
    [docs/03-execution](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/README.md)
    and
    [docs/04-ux](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/README.md)
-3. Use [styles/custom.css](/Users/abdoufrigaa/Projects/internhub/presentation/styles/custom.css) for slide-level branding and layout adjustments.
-4. Use [styles/tailwind.css](/Users/abdoufrigaa/Projects/internhub/presentation/styles/tailwind.css) as the Tailwind entry file for the deck.
-5. Add screenshots or product visuals inside `presentation/assets/` if needed.
+3. Use [SOUTENANCE-5MIN-PLAN.md](/Users/abdoufrigaa/Projects/internhub/presentation/SOUTENANCE-5MIN-PLAN.md) as the English short-format presenter plan for the 5-minute soutenance.
+4. Use [styles/custom.css](/Users/abdoufrigaa/Projects/internhub/presentation/styles/custom.css) for slide-level branding and layout adjustments.
+5. Use [styles/tailwind.css](/Users/abdoufrigaa/Projects/internhub/presentation/styles/tailwind.css) as the Tailwind entry file for the deck.
+6. Add screenshots or product visuals inside `presentation/assets/` if needed.
 
 ## Recommended Deck Rules
 

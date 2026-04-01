@@ -143,6 +143,15 @@ return static function (Router $router): void {
         new AuthenticateMiddleware(),
         new EnsureRoleMiddleware(['pilote']),
     ]);
+    $router->get('/dashboard/pilote/etudiants/create', [PilotController::class, 'createStudent'], [
+        new AuthenticateMiddleware(),
+        new EnsureRoleMiddleware(['pilote']),
+    ]);
+    $router->post('/dashboard/pilote/etudiants/create', [PilotController::class, 'storeStudent'], [
+        new AuthenticateMiddleware(),
+        new EnsureRoleMiddleware(['pilote']),
+        new CsrfMiddleware(),
+    ]);
     $router->get('/dashboard/pilote/etudiants/{id}', [PilotController::class, 'showStudent'], [
         new AuthenticateMiddleware(),
         new EnsureRoleMiddleware(['pilote']),
@@ -169,15 +178,6 @@ return static function (Router $router): void {
         new CsrfMiddleware(),
     ]);
     $router->post('/dashboard/pilote/etudiants/{id}/delete', [PilotController::class, 'deleteStudent'], [
-        new AuthenticateMiddleware(),
-        new EnsureRoleMiddleware(['pilote']),
-        new CsrfMiddleware(),
-    ]);
-    $router->get('/dashboard/pilote/etudiants/create', [PilotController::class, 'createStudent'], [
-        new AuthenticateMiddleware(),
-        new EnsureRoleMiddleware(['pilote']),
-    ]);
-    $router->post('/dashboard/pilote/etudiants/create', [PilotController::class, 'storeStudent'], [
         new AuthenticateMiddleware(),
         new EnsureRoleMiddleware(['pilote']),
         new CsrfMiddleware(),

@@ -30,30 +30,21 @@
                             <span>Academic year</span>
                         </div>
                     </div>
-                    <aside class="cover-aside">
-                        <div class="cover-aside__card">
-                            <div class="cover-aside__head">
-                                <span class="icon-badge"><i data-lucide="workflow"></i></span>
-                                <span class="cover-aside__label">Scope</span>
+                    <aside class="cover-preview">
+                        <img src="./assets/screenshots/public-pages.png" alt="InternHub interface preview">
+                        <div class="cover-preview__metrics">
+                            <div class="cover-preview__metric">
+                                <span>4 roles</span>
+                                <strong>Visitor to administrator</strong>
                             </div>
-                            <strong>End-to-end workflow</strong>
-                            <p>From public consultation to administration and supervision.</p>
-                        </div>
-                        <div class="cover-aside__card">
-                            <div class="cover-aside__head">
-                                <span class="icon-badge"><i data-lucide="users"></i></span>
-                                <span class="cover-aside__label">Structure</span>
+                            <div class="cover-preview__metric">
+                                <span>30+ views</span>
+                                <strong>Public, student, pilot, admin</strong>
                             </div>
-                            <strong>4 clearly separated roles</strong>
-                            <p>Visitor, student, pilot, and administrator with explicit access perimeters.</p>
-                        </div>
-                        <div class="cover-aside__card">
-                            <div class="cover-aside__head">
-                                <span class="icon-badge"><i data-lucide="badge-check"></i></span>
-                                <span class="cover-aside__label">Readiness</span>
+                            <div class="cover-preview__metric">
+                                <span>Demo ready</span>
+                                <strong>Resettable state and smoke tests</strong>
                             </div>
-                            <strong>Verified and demo-ready</strong>
-                            <p>Smoke-tested flows, resettable demo data, and controlled fallback pages.</p>
                         </div>
                     </aside>
                 </div>
@@ -104,29 +95,37 @@
                         <span class="icon-badge"><i data-lucide="globe"></i></span>
                         <span class="role-chip">Anonymous visitor</span>
                         <h3>Public consultation</h3>
-                        <p><strong>Access:</strong> Home page, internship listings, company listings, statistics, legal pages, sign-in.</p>
-                        <p><strong>Purpose:</strong> Discover the platform, browse opportunities, and understand the internship ecosystem before logging in.</p>
+                        <ul class="mini-list">
+                            <li><strong>Use:</strong> Home, offers, companies, statistics.</li>
+                            <li><strong>Goal:</strong> Discover opportunities before sign-in.</li>
+                        </ul>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="user"></i></span>
                         <span class="role-chip">Student</span>
                         <h3>Application workflow</h3>
-                        <p><strong>Access:</strong> Dashboard, applications, profile, wish-list, internship application flow.</p>
-                        <p><strong>Purpose:</strong> Explore offers, apply with supporting documents, and track submissions in one space.</p>
+                        <ul class="mini-list">
+                            <li><strong>Use:</strong> Dashboard, applications, profile, wish-list.</li>
+                            <li><strong>Goal:</strong> Apply, track, and manage personal progress.</li>
+                        </ul>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="briefcase"></i></span>
                         <span class="role-chip">Pilot</span>
                         <h3>Academic supervision</h3>
-                        <p><strong>Access:</strong> Promotion dashboard, student roster, student applications, scoped offer and company management.</p>
-                        <p><strong>Purpose:</strong> Supervise students, monitor application activity, and manage the operational follow-up.</p>
+                        <ul class="mini-list">
+                            <li><strong>Use:</strong> Promotion dashboard, roster, scoped management.</li>
+                            <li><strong>Goal:</strong> Supervise students and academic follow-up.</li>
+                        </ul>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="shield-check"></i></span>
                         <span class="role-chip">Administrator</span>
                         <h3>Platform governance</h3>
-                        <p><strong>Access:</strong> Admin dashboard, account management, global company and offer management, platform-wide visibility.</p>
-                        <p><strong>Purpose:</strong> Govern access rights, maintain core data, and keep the platform coherent across roles.</p>
+                        <ul class="mini-list">
+                            <li><strong>Use:</strong> Accounts, offers, companies, global visibility.</li>
+                            <li><strong>Goal:</strong> Govern access and maintain platform coherence.</li>
+                        </ul>
                     </article>
                 </div>
                 <p class="lead slide-summary">
@@ -249,9 +248,6 @@
                         <p>The persistence layer stores users, companies, offers, applications, and supporting workflow data in a relational SQL database.</p>
                     </article>
                 </div>
-                <p class="lead slide-summary">
-                    The point of this architecture is not complexity. It is clarity, controlled responsibilities, and maintainable growth without a framework.
-                </p>
             </section>
 
             <section data-background-color="#fbfbff">
@@ -293,50 +289,46 @@
                     <span class="icon-badge icon-badge--ghost"><i data-lucide="palette"></i></span>
                     <span class="eyebrow">UI/UX And Page Families</span>
                 </div>
-                <h2>The redesign was structured by page family, not done screen by screen.</h2>
+                <h2>The redesign was structured by page family.</h2>
                 <p class="lead">
-                    The interface work was organized as a mobile-first system, with each major page family receiving its own coherent visual layer and navigation logic.
+                    The interface work was organized as a mobile-first system, with each family receiving its own hierarchy, navigation logic, and visual treatment.
                 </p>
-                <div class="card-grid ui-grid">
-                    <article class="deck-card">
-                        <span class="icon-badge"><i data-lucide="globe"></i></span>
-                        <span class="family-chip">Public pages</span>
-                        <h3>Discovery and consultation</h3>
-                        <p>Landing, offers, companies, and public statistics were redesigned as a consistent product-facing experience.</p>
+                <div class="ui-showcase">
+                    <article class="ui-shot-card">
+                        <img src="./assets/screenshots/public-pages.png" alt="Public pages preview">
+                        <div class="ui-shot-card__body">
+                            <span class="family-chip">Public pages</span>
+                            <h3>Discovery and consultation</h3>
+                            <p>Offers, companies, and statistics in one public-facing experience.</p>
+                        </div>
                     </article>
-                    <article class="deck-card">
-                        <span class="icon-badge"><i data-lucide="user"></i></span>
-                        <span class="family-chip">Student pages</span>
-                        <h3>Action-oriented workspace</h3>
-                        <p>Dashboard, applications, wish-list, profile, and submission pages were rebuilt around the student journey.</p>
+                    <article class="ui-shot-card">
+                        <img src="./assets/screenshots/student-pages.png" alt="Student pages preview">
+                        <div class="ui-shot-card__body">
+                            <span class="family-chip">Student pages</span>
+                            <h3>Action-oriented workspace</h3>
+                            <p>Dashboard, applications, profile, and wish-list centered on student action.</p>
+                        </div>
                     </article>
-                    <article class="deck-card">
-                        <span class="icon-badge"><i data-lucide="users"></i></span>
-                        <span class="family-chip">Pilot pages</span>
-                        <h3>Supervision-first interface</h3>
-                        <p>Roster, follow-up, student detail, and supervision views were redesigned to support academic coordination clearly.</p>
+                    <article class="ui-shot-card">
+                        <img src="./assets/screenshots/pilot-pages.png" alt="Pilot pages preview">
+                        <div class="ui-shot-card__body">
+                            <span class="family-chip">Pilot pages</span>
+                            <h3>Supervision-first interface</h3>
+                            <p>Roster, follow-up, and student supervision for academic coordination.</p>
+                        </div>
                     </article>
-                    <article class="deck-card">
-                        <span class="icon-badge"><i data-lucide="shield-check"></i></span>
-                        <span class="family-chip">Admin pages</span>
-                        <h3>Governance and control</h3>
-                        <p>Admin dashboard and account management pages use a more sober and operational UI language.</p>
-                    </article>
-                    <article class="deck-card">
-                        <span class="icon-badge"><i data-lucide="layout-grid"></i></span>
-                        <span class="family-chip">CRUD management pages</span>
-                        <h3>Shared operational layer</h3>
-                        <p>Offer and company management were unified into reusable patterns that work for both pilot and admin scopes.</p>
-                    </article>
-                    <article class="deck-card">
-                        <span class="icon-badge"><i data-lucide="badge-check"></i></span>
-                        <span class="family-chip">Support and system pages</span>
-                        <h3>Reliable fallback states</h3>
-                        <p>Statistics, legal mentions, and 403/404/500 pages were treated as part of the product, not as afterthoughts.</p>
+                    <article class="ui-shot-card">
+                        <img src="./assets/screenshots/admin-pages.png" alt="Admin pages preview">
+                        <div class="ui-shot-card__body">
+                            <span class="family-chip">Admin pages</span>
+                            <h3>Governance and control</h3>
+                            <p>Governance, accounts, and global management in a sober operational UI.</p>
+                        </div>
                     </article>
                 </div>
                 <p class="lead slide-summary">
-                    This is what makes the redesign methodical: page families, responsive rules, and consistent UI behavior across the whole application.
+                    Shared CRUD pages and support states complete the system, but these four families carry the main product experience.
                 </p>
             </section>
 
@@ -349,30 +341,48 @@
                 <p class="lead">
                     Implementation alone was not enough. The delivery also includes automated checks, repeatable demo preparation, and controlled fallback behavior.
                 </p>
+                <div class="proof-strip">
+                    <article class="proof-metric">
+                        <strong>12</strong>
+                        <span>unit tests</span>
+                    </article>
+                    <article class="proof-metric">
+                        <strong>3</strong>
+                        <span>phase smoke suites</span>
+                    </article>
+                    <article class="proof-metric">
+                        <strong>1</strong>
+                        <span>reset-demo-state workflow</span>
+                    </article>
+                    <article class="proof-metric">
+                        <strong>403·404·500</strong>
+                        <span>controlled error pages</span>
+                    </article>
+                </div>
                 <div class="card-grid verification-grid">
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="activity"></i></span>
                         <span class="verification-chip">Proof 01</span>
                         <h3>Unit tests</h3>
-                        <p>The codebase includes a PHPUnit foundation to verify key application behavior beyond manual navigation.</p>
+                        <p>PHPUnit covers key application behavior beyond manual navigation.</p>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="check-check"></i></span>
                         <span class="verification-chip">Proof 02</span>
                         <h3>Smoke tests</h3>
-                        <p>Phase-level smoke scripts validate the main public, student, pilot, admin, and support flows across the application.</p>
+                        <p>Phase-level smoke scripts validate the main public, student, pilot, admin, and support flows.</p>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="rotate-ccw"></i></span>
                         <span class="verification-chip">Proof 03</span>
                         <h3>Resettable demo state</h3>
-                        <p>The demo dataset and accounts can be restored before presentation, which reduces risk during the live walkthrough.</p>
+                        <p>The demo dataset and accounts can be restored before presentation to reduce live-demo risk.</p>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="triangle-alert"></i></span>
                         <span class="verification-chip">Proof 04</span>
                         <h3>Error handling</h3>
-                        <p>403, 404, and 500 states are explicitly handled, which makes the application more stable and defendable in edge cases.</p>
+                        <p>403, 404, and 500 states are explicitly handled, making the application more stable in edge cases.</p>
                     </article>
                 </div>
                 <p class="lead slide-summary">
@@ -396,6 +406,12 @@
                         <div>
                             <h3>Public sequence</h3>
                             <p>Home, offers, companies, and statistics.</p>
+                            <div class="route-chip-group">
+                                <span>/</span>
+                                <span>/offres</span>
+                                <span>/entreprises</span>
+                                <span>/statistiques</span>
+                            </div>
                         </div>
                     </article>
                     <article class="demo-step">
@@ -404,6 +420,12 @@
                         <div>
                             <h3>Student sequence</h3>
                             <p>Login, dashboard, applications, and profile.</p>
+                            <div class="route-chip-group">
+                                <span>/login</span>
+                                <span>/dashboard/etudiant</span>
+                                <span>/candidatures</span>
+                                <span>/profil</span>
+                            </div>
                         </div>
                     </article>
                     <article class="demo-step">
@@ -412,6 +434,11 @@
                         <div>
                             <h3>Pilot sequence</h3>
                             <p>Dashboard, student roster, follow-up, and supervision pages.</p>
+                            <div class="route-chip-group">
+                                <span>/dashboard/pilote</span>
+                                <span>/etudiants</span>
+                                <span>/candidatures</span>
+                            </div>
                         </div>
                     </article>
                     <article class="demo-step">
@@ -420,6 +447,11 @@
                         <div>
                             <h3>Admin sequence</h3>
                             <p>Dashboard, accounts, and global management interfaces.</p>
+                            <div class="route-chip-group">
+                                <span>/dashboard/admin</span>
+                                <span>/admin/comptes</span>
+                                <span>/admin/offres</span>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -441,7 +473,7 @@
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="workflow"></i></span>
                         <h3>End-to-end workflow</h3>
-                        <p>The application supports the internship journey from public consultation to application, supervision, and governance.</p>
+                        <p>The application supports the internship journey from consultation to application, supervision, and governance.</p>
                     </article>
                     <article class="deck-card">
                         <span class="icon-badge"><i data-lucide="users"></i></span>
@@ -457,6 +489,7 @@
                 <p class="lead slide-summary">
                     Thank you. We can now move to the live demo or open the discussion.
                 </p>
+                <div class="closing-banner">Ready for live demo, technical questions, and design discussion.</div>
             </section>
         </div>
     </div>
