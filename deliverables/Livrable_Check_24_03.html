@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livrable Check 24/03 - InternHub</title>
+    <style>
+        :root {
+            --ink: #0f172a;
+            --muted: #475569;
+            --line: #cbd5e1;
+            --violet: #4f46e5;
+            --surface: #ffffff;
+            --surface-soft: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            color: var(--ink);
+            background: white;
+            line-height: 1.5;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 18mm 16mm;
+            background: var(--surface);
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        h1, h2, h3 {
+            margin: 0 0 0.6rem;
+            line-height: 1.15;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--line);
+            margin-top: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        p, li {
+            font-size: 0.94rem;
+            color: var(--muted);
+        }
+
+        .cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 250mm;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            padding: 0.35rem 0.7rem;
+            border-radius: 999px;
+            background: rgba(79, 70, 229, 0.08);
+            color: var(--violet);
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-size: 0.72rem;
+            margin-bottom: 1rem;
+        }
+
+        .summary-box {
+            padding: 1rem 1.1rem;
+            background: var(--surface-soft);
+            border: 1px solid var(--line);
+            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+        }
+
+        .meta-card {
+            padding: 0.9rem 1rem;
+            border: 1px solid var(--line);
+            border-radius: 0.9rem;
+            background: white;
+        }
+
+        .meta-card strong {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.8rem;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid var(--line);
+            padding: 0.55rem 0.65rem;
+            vertical-align: top;
+            text-align: left;
+            font-size: 0.86rem;
+        }
+
+        .table th {
+            background: var(--surface-soft);
+            color: var(--ink);
+        }
+
+        .uml-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        figure {
+            margin: 0;
+            border: 1px solid var(--line);
+            border-radius: 1rem;
+            overflow: hidden;
+            background: white;
+        }
+
+        figure img {
+            width: 100%;
+            display: block;
+            background: white;
+        }
+
+        figure figcaption {
+            padding: 0.75rem 0.9rem;
+            font-size: 0.82rem;
+            color: var(--muted);
+            background: var(--surface-soft);
+            border-top: 1px solid var(--line);
+        }
+
+        .mermaid {
+            margin-top: 1rem;
+            padding: 0.8rem;
+            border: 1px solid var(--line);
+            border-radius: 1rem;
+            background: white;
+        }
+
+        .note {
+            padding: 0.9rem 1rem;
+            border-left: 4px solid var(--violet);
+            background: rgba(79, 70, 229, 0.06);
+            border-radius: 0.6rem;
+            margin-top: 1rem;
+        }
+
+        .small {
+            font-size: 0.82rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="page cover">
+        <span class="eyebrow">Livrable check du 24/03</span>
+        <h1>InternHub</h1>
+        <p>
+            Ce document rassemble en un seul fichier les trois elements demandes pour le premier livrable de verification :
+            une premiere version du MCD, le planning previsionnel, et l'ensemble des diagrammes UML finalises.
+        </p>
+        <div class="summary-box">
+            <strong>Contenu du livrable</strong>
+            <ul>
+                <li>Modele conceptuel de donnees (MCD)</li>
+                <li>Planning previsionnel avec PERT et Gantt</li>
+                <li>Diagrammes UML de reference du projet</li>
+            </ul>
+        </div>
+        <div class="meta-grid">
+            <div class="meta-card">
+                <strong>Projet</strong>
+                InternHub - Plateforme web de gestion des stages
+            </div>
+            <div class="meta-card">
+                <strong>Bloc</strong>
+                Projet Web
+            </div>
+            <div class="meta-card">
+                <strong>Nature du document</strong>
+                Livrable de verification
+            </div>
+            <div class="meta-card">
+                <strong>Date cible</strong>
+                24/03
+            </div>
+        </div>
+    </section>
+
+    <section class="page page-break">
+        <h2>1. Modele conceptuel de donnees</h2>
+        <p>
+            Le MCD du projet InternHub s'organise autour des promotions, des utilisateurs, des entreprises, des offres de stage,
+            des candidatures et de la wish-list etudiante. Une extension conceptuelle pour l'evaluation d'entreprise est egalement
+            retenue car elle apparait dans le cahier des charges.
+        </p>
+
+        <h3>Legende des cardinalites</h3>
+        <ul>
+            <li><strong>0,1</strong> : participation facultative et unique</li>
+            <li><strong>1,1</strong> : participation obligatoire et unique</li>
+            <li><strong>0,n</strong> : participation facultative et multiple</li>
+            <li><strong>1,n</strong> : participation obligatoire et multiple</li>
+        </ul>
+
+        <h3>Associations principales</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Association</th>
+                    <th>Entite A</th>
+                    <th>Cardinalite A</th>
+                    <th>Entite B</th>
+                    <th>Cardinalite B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>APPARTENIR</td>
+                    <td>PROMOTION</td>
+                    <td>0,n</td>
+                    <td>UTILISATEUR</td>
+                    <td>0,1</td>
+                </tr>
+                <tr>
+                    <td>PROPOSER</td>
+                    <td>ENTREPRISE</td>
+                    <td>0,n</td>
+                    <td>OFFRE</td>
+                    <td>1,1</td>
+                </tr>
+                <tr>
+                    <td>CANDIDATER</td>
+                    <td>UTILISATEUR [etudiant]</td>
+                    <td>0,n</td>
+                    <td>OFFRE</td>
+                    <td>0,n</td>
+                </tr>
+                <tr>
+                    <td>AJOUTER_WISHLIST</td>
+                    <td>UTILISATEUR [etudiant]</td>
+                    <td>0,n</td>
+                    <td>OFFRE</td>
+                    <td>0,n</td>
+                </tr>
+                <tr>
+                    <td>EVALUER</td>
+                    <td>UTILISATEUR [role autorise]</td>
+                    <td>0,n</td>
+                    <td>ENTREPRISE</td>
+                    <td>0,n</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="mermaid">
+flowchart LR
+    PROMOTION["PROMOTION<br/>id_promotion<br/>nom"]
+    UTILISATEUR["UTILISATEUR<br/>id_utilisateur<br/>prenom<br/>nom<br/>email<br/>role"]
+    ENTREPRISE["ENTREPRISE<br/>id_entreprise<br/>nom<br/>description<br/>secteur<br/>ville"]
+    OFFRE["OFFRE<br/>id_offre<br/>titre<br/>description<br/>localisation<br/>type_contrat"]
+
+    APPARTENIR("APPARTENIR")
+    PROPOSER("PROPOSER")
+    CANDIDATER("CANDIDATER<br/>LM, CV, statut, date_creation")
+    WISHLIST("AJOUTER_WISHLIST<br/>date_creation")
+    EVALUER("EVALUER<br/>note, commentaire, date_creation")
+
+    PROMOTION ---|"0,n"| APPARTENIR
+    APPARTENIR ---|"0,1"| UTILISATEUR
+
+    ENTREPRISE ---|"0,n"| PROPOSER
+    PROPOSER ---|"1,1"| OFFRE
+
+    UTILISATEUR ---|"0,n (etudiant)"| CANDIDATER
+    CANDIDATER ---|"0,n"| OFFRE
+
+    UTILISATEUR ---|"0,n (etudiant)"| WISHLIST
+    WISHLIST ---|"0,n"| OFFRE
+
+    UTILISATEUR ---|"0,n (role autorise)"| EVALUER
+    EVALUER ---|"0,n"| ENTREPRISE
+        </div>
+
+        <div class="note small">
+            Note : l'association EVALUER figure dans le MCD car elle est demandee dans le cahier des charges,
+            meme si elle n'est pas encore implantee dans le schema physique actuel.
+        </div>
+    </section>
+
+    <section class="page page-break">
+        <h2>2. Planning previsionnel</h2>
+        <p>
+            Le planning previsionnel du projet a ete formalise a l'aide d'un diagramme PERT pour les dependances et d'un diagramme
+            de Gantt pour la planification dans le temps. Il permet de visualiser les lots techniques, le chemin critique et
+            la repartition possible du travail au sein du groupe.
+        </p>
+
+        <h3>Lots de travail</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Lot developpeur</th>
+                    <th>Duree</th>
+                    <th>Depend de</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>A</td><td>Cadrage technique</td><td>4 j</td><td>Aucun</td></tr>
+                <tr><td>B</td><td>UX et maquettes</td><td>5 j</td><td>A</td></tr>
+                <tr><td>C</td><td>Architecture MVC</td><td>4 j</td><td>A</td></tr>
+                <tr><td>D</td><td>MCD et schema SQL</td><td>4 j</td><td>A</td></tr>
+                <tr><td>E</td><td>Frontend public</td><td>6 j</td><td>B</td></tr>
+                <tr><td>F</td><td>Backend entreprises et offres</td><td>6 j</td><td>C, D</td></tr>
+                <tr><td>G</td><td>Authentification et permissions</td><td>5 j</td><td>C, D</td></tr>
+                <tr><td>H</td><td>Integration base</td><td>4 j</td><td>D, F</td></tr>
+                <tr><td>I</td><td>Candidatures et wish-list</td><td>6 j</td><td>F, G, H</td></tr>
+                <tr><td>J</td><td>Tests et recette</td><td>5 j</td><td>E, H, I</td></tr>
+                <tr><td>K</td><td>Preparation soutenance</td><td>3 j</td><td>J</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Diagramme PERT</h3>
+        <div class="mermaid">
+flowchart LR
+    N0["Evt 0 | tot 0 | tard 0 | Debut"]
+    N1["Evt 1 | tot 4 | tard 4"]
+    N2["Evt 2 | tot 9 | tard 18"]
+    N3["Evt 3 | tot 8 | tard 8"]
+    N4["Evt 4 | tot 8 | tard 8"]
+    N5["Evt 5 | tot 15 | tard 24"]
+    N6["Evt 6 | tot 14 | tard 14"]
+    N7["Evt 7 | tot 13 | tard 18"]
+    N8["Evt 8 | tot 18 | tard 18"]
+    N9["Evt 9 | tot 24 | tard 24"]
+    N10["Evt 10 | tot 29 | tard 29"]
+    N11["Evt 11 | tot 32 | tard 32 | Fin"]
+    N0 -->|"A (4j)"| N1
+    N1 -->|"B (5j)"| N2
+    N1 -->|"C (4j)"| N3
+    N1 -->|"D (4j)"| N4
+    N3 -.->|"L1 (0j)"| N4
+    N2 -->|"E (6j)"| N5
+    N4 -->|"F (6j)"| N6
+    N4 -->|"G (5j)"| N7
+    N6 -->|"H (4j)"| N8
+    N7 -.->|"L2 (0j)"| N8
+    N8 -->|"I (6j)"| N9
+    N5 -.->|"L3 (0j)"| N9
+    N9 -->|"J (5j)"| N10
+    N10 -->|"K (3j)"| N11
+        </div>
+
+        <h3>Diagramme de Gantt</h3>
+        <div class="mermaid">
+gantt
+    title Gantt developpeur - InternHub
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d/%m
+    excludes    weekends
+
+    section Cadrage
+    D1 Cadrage                          :d1, 2026-03-30, 4d
+
+    section Conception
+    D2 UX                               :d2, 2026-04-03, 5d
+    D3 MVC                              :d3, 2026-04-03, 4d
+    D4 SQL                              :d4, 2026-04-03, 4d
+
+    section Dev coeur
+    D5 Front                            :d5, 2026-04-10, 6d
+    D6 Backend                          :d6, 2026-04-09, 6d
+    D7 Auth                             :d7, 2026-04-09, 5d
+    D8 DB                               :d8, 2026-04-17, 4d
+
+    section Fonctions avancees
+    D9 Candidatures                     :d9, 2026-04-23, 6d
+
+    section Stabilisation
+    D10 Tests                           :d10, 2026-05-01, 5d
+    D11 Soutenance                      :d11, 2026-05-08, 3d
+        </div>
+
+        <div class="note small">
+            Repartition developpeur recommandee : Abdou (structure applicative), Mehdi (frontend et integration),
+            Karim (donnees et SQL), Oussama (securite et comptes).
+        </div>
+    </section>
+
+    <section class="page page-break">
+        <h2>3. Diagrammes UML finalises</h2>
+        <p>
+            Les diagrammes UML et de parcours ci-dessous ont servi a structurer les pages, les routes, les sequences critiques
+            et la logique generale de la plateforme InternHub.
+        </p>
+
+        <div class="uml-grid">
+            <figure>
+                <img src="../docs/05-sources/uml/Page%20Map%20-%20Plateforme%20Stages%20%28Site%20Map%29.png" alt="Site map UML">
+                <figcaption>Site map global de la plateforme.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../docs/05-sources/uml/Stage%20platform%20-%20User%20flow%20%28Etudiant%20-%20Recherche%20-%3E%20Postuler%29.png" alt="User flow etudiant">
+                <figcaption>User flow etudiant : recherche d'offre puis candidature.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../docs/05-sources/uml/User%20Journey%20-%20%C3%89tudiant%20-%20Rechercher%20-%3E%20Postuler%20%28CV%2BLM%29.png" alt="User journey etudiant">
+                <figcaption>User journey etudiant detaille avec CV et lettre de motivation.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../docs/05-sources/uml/title%20User%20Journey%20.png" alt="User journey pilote">
+                <figcaption>User journey pilote pour le suivi des candidatures de la promotion.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="page page-break">
+        <h2>4. Diagrammes UML finalises - suites de sequences</h2>
+        <div class="uml-grid">
+            <figure>
+                <img src="../docs/05-sources/uml/Sequence%20-%20Login%20Student%20%28Auth%29.png" alt="Sequence login">
+                <figcaption>Diagramme de sequence : authentification etudiante.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../docs/05-sources/uml/Sequence%20-%20Recherche%20Offres.png" alt="Sequence recherche offres">
+                <figcaption>Diagramme de sequence : recherche d'offres avec filtres et pagination.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../docs/05-sources/uml/Sequence%20-%20Wish-list%20%28Ajouter%29.png" alt="Sequence wishlist">
+                <figcaption>Diagramme de sequence : ajout d'une offre a la wish-list.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="../docs/05-sources/uml/Sequence%20-%20Postuler%20a%20une%20offre%20%28CV%2BLM%29.png" alt="Sequence candidature">
+                <figcaption>Diagramme de sequence : postuler a une offre avec CV et lettre de motivation.</figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <section class="page page-break">
+        <h2>5. Conclusion du livrable</h2>
+        <p>
+            Ce livrable de verification rassemble les trois pieces demandees :
+        </p>
+        <ul>
+            <li>une premiere version du modele conceptuel de donnees,</li>
+            <li>le planning previsionnel avec dependances et planning equipe,</li>
+            <li>l'ensemble des diagrammes UML finalises utilises pour structurer l'application.</li>
+        </ul>
+        <div class="summary-box">
+            <strong>Resume</strong>
+            <p class="small">
+                L'ensemble de ces documents permet de justifier le cadrage du projet, la modelisation metier, la planification,
+                ainsi que la conception fonctionnelle et technique de la plateforme InternHub.
+            </p>
+        </div>
+    </section>
+
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: { curve: 'linear' },
+            securityLevel: 'loose'
+        });
+    </script>
+</body>
+</html>

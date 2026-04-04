@@ -20,6 +20,7 @@ Ordre de lecture recommande :
 14. [28-spec-pages-admin.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/28-spec-pages-admin.md)
 15. [29-spec-pages-management-crud.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/29-spec-pages-management-crud.md)
 16. [30-spec-pages-systeme-support.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/30-spec-pages-systeme-support.md)
+17. [31-site-map-application.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/31-site-map-application.md)
 
 Contenu :
 
@@ -40,3 +41,4 @@ Contenu :
 - [28-spec-pages-admin.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/28-spec-pages-admin.md) : handoff detaille pour l'ensemble des pages administrateur.
 - [29-spec-pages-management-crud.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/29-spec-pages-management-crud.md) : handoff detaille pour les pages de management CRUD offres et entreprises.
 - [30-spec-pages-systeme-support.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/30-spec-pages-systeme-support.md) : handoff detaille pour les pages systeme et support.
+- [31-site-map-application.md](/Users/abdoufrigaa/Projects/internhub/docs/04-ux/31-site-map-application.md) : vue d'ensemble des pages et de l'arborescence applicative.

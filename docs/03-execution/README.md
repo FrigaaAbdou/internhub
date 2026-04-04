@@ -25,6 +25,8 @@ Ordre de lecture recommande :
 19. [27-argumentaire-technique-fonctionnel-p9.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/27-argumentaire-technique-fonctionnel-p9.md)
 20. [28-repartition-soutenance-p9.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/28-repartition-soutenance-p9.md)
 21. [29-repetition-complete-p9.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/29-repetition-complete-p9.md)
+22. [30-questions-reponses-jury-approfondies.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/30-questions-reponses-jury-approfondies.md)
+23. [31-livrable-check-24-03.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/31-livrable-check-24-03.md)
 
 Contenu :
 
@@ -49,3 +51,5 @@ Contenu :
 - [27-argumentaire-technique-fonctionnel-p9.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/27-argumentaire-technique-fonctionnel-p9.md) : reponses courtes et defendables de `P9.4` pour les choix techniques, metier, securite et verification.
 - [28-repartition-soutenance-p9.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/28-repartition-soutenance-p9.md) : repartition operationnelle de `P9.5` avec slots d intervenants, transitions et variantes selon la taille d equipe.
 - [29-repetition-complete-p9.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/29-repetition-complete-p9.md) : protocole et fermeture de `P9.6` avec repetition technique complete rejouable en une commande.
+- [30-questions-reponses-jury-approfondies.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/30-questions-reponses-jury-approfondies.md) : questions de jury plus techniques et reponses defendables sur l architecture, le code, les permissions, les modeles de donnees, les tests et les ecarts de planning.
+- [31-livrable-check-24-03.md](/Users/abdoufrigaa/Projects/internhub/docs/03-execution/31-livrable-check-24-03.md) : guide concret pour assembler le premier livrable de verification avec MCD, planning previsionnel et UML.

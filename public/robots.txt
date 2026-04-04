@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Public pages
+Allow: /offres
+Allow: /entreprises
+Allow: /statistiques
+Allow: /mentions-legales
+
+# Private and technical areas
+Disallow: /dashboard/
+Disallow: /admin/
+Disallow: /health
+
