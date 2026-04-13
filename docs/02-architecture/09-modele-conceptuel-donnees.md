@@ -27,7 +27,6 @@ Le coeur du modele est le suivant :
 - une `ENTREPRISE` peut etre `EVALUEE` si cette fonctionnalite est retenue.
 
 ## Associations principales
-
 | Association | Entite A | Cardinalite A | Entite B | Cardinalite B |
 | --- | --- | --- | --- | --- |
 | `APPARTENIR` | `PROMOTION` | `0,n` | `UTILISATEUR` | `0,1` |
@@ -35,6 +34,7 @@ Le coeur du modele est le suivant :
 | `CANDIDATER` | `UTILISATEUR [etudiant]` | `0,n` | `OFFRE` | `0,n` |
 | `AJOUTER_WISHLIST` | `UTILISATEUR [etudiant]` | `0,n` | `OFFRE` | `0,n` |
 | `EVALUER` | `UTILISATEUR [role autorise]` | `0,n` | `ENTREPRISE` | `0,n` |
+
 
 ## Schema Merise simplifie
 
